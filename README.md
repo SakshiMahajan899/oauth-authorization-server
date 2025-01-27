@@ -60,3 +60,12 @@ To run the server using Maven, execute the following command:
 
 ```sh
 mvn spring-boot:run
+
+### Generate token - By providing the client Id and secret inside Authorization and provide the scope and granttype inside Body select  x-www-form-urlencoded. Refer the screenprint below
+
+![image](https://github.com/user-attachments/assets/232d93f8-6e07-495c-8e51-27244a328059)
+
+
+![image](https://github.com/user-attachments/assets/c379459f-46dd-4a83-9618-3cf58a0434a8)
+
+
