@@ -11,6 +11,7 @@ This OAuth Authorization Server handles authentication and authorization for you
 5. [Configuration](#configuration)
 6. [Running the Server](#running-the-server)
 7. [Access using Client](#access-using-client)
+8. [Continuous Integration and Deployment]
 
 ## Overview
 
@@ -58,7 +59,18 @@ mvn spring-boot:run
 ```
 ## Access using Client
 
-Generate token 
-1.By providing the valid client Id and secret inside Authorization 
-2.Mention the valid scope and granttype inside Body select x-www-form-urlencoded. 
+Generate token - By providing the valid client Id and secret inside Authorization and mention the valid scope and granttype inside Body select x-www-form-urlencoded. 
 Refer the screenprint below ![image](https://github.com/user-attachments/assets/232d93f8-6e07-495c-8e51-27244a328059) ![image](https://github.com/user-attachments/assets/c379459f-46dd-4a83-9618-3cf58a0434a8)
+
+## Continuous Integration and Deployment
+
+Within the oauth-authorization-server/.github/workflows/ directory, you'll find the ci-cd.yml file, which is used to build the code & deploy the image to dockerHub.
+![image](https://github.com/user-attachments/assets/26fc067d-3e69-4f98-925a-7f4d9c951842)
+![image](https://github.com/user-attachments/assets/e1b65d07-fff0-4baa-ae95-718a711d4f1c)
+
+
+### Pipeline link
+https://github.com/SakshiMahajan899/oauth-authorization-server/actions
+
+
+
