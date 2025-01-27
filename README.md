@@ -1,6 +1,6 @@
 # OAuth Authorization Server
 
-This is an OAuth Authorization Server that handles authentication and authorization for your applications.
+This OAuth Authorization Server handles authentication and authorization for your applications.
 
 ## Table of Contents
 
@@ -14,20 +14,20 @@ This is an OAuth Authorization Server that handles authentication and authorizat
 
 ## Overview
 
-The OAuth Authorization Server is responsible for issuing access tokens, handling client authentication, and managing authorization processes. It supports OAuth 2.0 standards .
+The OAuth Authorization Server is responsible for issuing access tokens, handling client authentication, and managing authorization processes. It supports OAuth 2.0 standards.
 
 ## Features
 
 - OAuth 2.0 compliant
 - JWT token generation and validation
-- Support for multiple grant type ( Client Credentials)
+- Support for multiple grant types (Client Credentials)
 - Integration with Resource Server
 - Secure and scalable
 
 ## Prerequisites
 
-- Java 17 
-- Maven 
+- Java 17
+- Maven
 - Docker (optional, for containerized deployment)
 - Git
 
@@ -48,26 +48,17 @@ The OAuth Authorization Server is responsible for issuing access tokens, handlin
 
 ## Configuration
 
-Configuration settings can be found in the `application.yml` file located in the `src/main/resources` directory. 
-
-## Access using client
+Configuration settings can be found in the `application.yml` file located in the `src/main/resources` directory.
 
 ## Running the Server
-### Generate token - By providing the client Id and secret inside Authorization and provide the scope and grant type inside Body select `x-www-form-urlencoded`. Refer to the screenshots below:
-
-![image](https://github.com/user-attachments/assets/232d93f8-6e07-495c-8e51-27244a328059)
-
-![image](https://github.com/user-attachments/assets/c379459f-46dd-4a83-9618-3cf58a0434a8)
-
-### Using Maven
 
 To run the server using Maven, execute the following command:
-
 ```sh
 mvn spring-boot:run
+```
+## Access using Client
 
-
-
-
-
-
+Generate token 
+1.By providing the valid client Id and secret inside Authorization 
+2.Mention the valid scope and granttype inside Body select x-www-form-urlencoded. 
+Refer the screenprint below ![image](https://github.com/user-attachments/assets/232d93f8-6e07-495c-8e51-27244a328059) ![image](https://github.com/user-attachments/assets/c379459f-46dd-4a83-9618-3cf58a0434a8)
