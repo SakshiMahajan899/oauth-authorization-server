@@ -10,9 +10,7 @@ This is an OAuth Authorization Server that handles authentication and authorizat
 4. [Installation](#installation)
 5. [Configuration](#configuration)
 6. [Running the Server](#running-the-server)
-7. [API Documentation](#api-documentation)
-8. [Contributing](#contributing)
-9. [License](#license)
+7. [Access using Client](#access-using-client)
 
 ## Overview
 
@@ -52,7 +50,14 @@ The OAuth Authorization Server is responsible for issuing access tokens, handlin
 
 Configuration settings can be found in the `application.yml` file located in the `src/main/resources` directory. 
 
+## Access using client
+
 ## Running the Server
+### Generate token - By providing the client Id and secret inside Authorization and provide the scope and grant type inside Body select `x-www-form-urlencoded`. Refer to the screenshots below:
+
+![image](https://github.com/user-attachments/assets/232d93f8-6e07-495c-8e51-27244a328059)
+
+![image](https://github.com/user-attachments/assets/c379459f-46dd-4a83-9618-3cf58a0434a8)
 
 ### Using Maven
 
@@ -60,5 +65,9 @@ To run the server using Maven, execute the following command:
 
 ```sh
 mvn spring-boot:run
+
+
+
+
 
 
