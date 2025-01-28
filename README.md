@@ -1,6 +1,10 @@
 # OAuth Authorization Server
 
-This OAuth Authorization Server handles authentication and authorization for your applications.
+ - I createc this OAuth Authorization Server which specifically handles authentication and authorization for the bank application.
+ -  Two clients of bankapplication onboarded inside authorization server admin and user .
+ -  RBAC rules are also implemented for the client using scope.
+
+
 
 ## Table of Contents
 
@@ -22,7 +26,7 @@ The OAuth Authorization Server is responsible for issuing access tokens, handlin
 - OAuth 2.0 compliant
 - JWT token generation and validation
 - Support for multiple grant types (Client Credentials)
-- Integration with Resource Server
+- Integration with Resource Server which is Bankapplication
 - Secure and scalable
 
 ## Prerequisites
@@ -59,7 +63,9 @@ mvn spring-boot:run
 ```
 ## Access using Client
 
-Generate token - By providing the valid client Id and secret inside Authorization and mention the valid scope and granttype inside Body select x-www-form-urlencoded. 
+Token Generation
+ - Provide the valid client Id and secret inside Authorization and In the Body select x-www-form-urlencoded provide credentials_type and scope.
+   
 Refer the screenprint below ![image](https://github.com/user-attachments/assets/232d93f8-6e07-495c-8e51-27244a328059) ![image](https://github.com/user-attachments/assets/c379459f-46dd-4a83-9618-3cf58a0434a8)
 
 ## Continuous Integration and Deployment
